@@ -530,6 +530,11 @@ hr {
   margin: 0 0 20px
 }
 
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+  padding-left: 20px; /* optional: buat indent lebih rapi */
+}
+
 footer {
   width: 270px;
   float: left;
