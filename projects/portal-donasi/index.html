@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dokumentasi Toko Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-blue-600 text-white py-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">📘 Dokumentasi Aplikasi Toko Online</h1>
+      <p class="text-sm text-blue-100">Panduan lengkap dari instalasi sampai penggunaan</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10">
+    
+    <!-- 1. Pendahuluan -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">1. Pendahuluan</h2>
+      <p>Aplikasi Toko Online adalah platform e-commerce sederhana untuk menjual produk secara daring. Sistem ini memiliki 2 peran utama: <strong>pengguna</strong> dan <strong>admin</strong>.</p>
+    </section>
+
+    <!-- 2. Fitur Utama -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">2. Fitur Utama</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Registrasi & Login Pengguna</li>
+        <li>Manajemen Produk</li>
+        <li>Keranjang & Checkout</li>
+        <li>Manajemen Pesanan</li>
+        <li>Riwayat Transaksi</li>
+        <li>Dashboard Admin</li>
+      </ul>
+    </section>
+
+    <!-- 3. Instalasi -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">3. Cara Instalasi</h2>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Clone repository:
+          <pre class="bg-gray-100 p-3 rounded mt-1"><code>git clone https://github.com/username/toko-online.git</code></pre>
+        </li>
+        <li>Masuk folder project dan install dependency:
+          <pre class="bg-gray-100 p-3 rounded mt-1"><code>cd toko-online
+composer install</code></pre>
+        </li>
+        <li>Salin file <code>.env</code> dan konfigurasi database:
+          <pre class="bg-gray-100 p-3 rounded mt-1"><code>cp .env.example .env</code></pre>
+        </li>
+        <li>Jalankan migrasi dan seeder:
+          <pre class="bg-gray-100 p-3 rounded mt-1"><code>php artisan migrate --seed</code></pre>
+        </li>
+        <li>Jalankan server:
+          <pre class="bg-gray-100 p-3 rounded mt-1"><code>php artisan serve</code></pre>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 4. Struktur Database -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">4. Struktur Database</h2>
+      <table class="min-w-full table-auto border border-gray-200">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-4 py-2 text-left">Tabel</th>
+            <th class="px-4 py-2 text-left">Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border px-4 py-2">users</td>
+            <td class="border px-4 py-2">Data pengguna</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">products</td>
+            <td class="border px-4 py-2">Data produk</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">orders</td>
+            <td class="border px-4 py-2">Transaksi pesanan</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">order_items</td>
+            <td class="border px-4 py-2">Detail produk per pesanan</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 5. Alur Aplikasi -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">5. Alur Penggunaan</h2>
+      <div class="bg-white p-4 border-l-4 border-blue-500 shadow">
+        <ol class="list-decimal list-inside space-y-1">
+          <li>Pengguna mendaftar dan login</li>
+          <li>Menelusuri produk dan menambah ke keranjang</li>
+          <li>Checkout dan pilih metode pembayaran</li>
+          <li>Admin mengelola dan mengirim pesanan</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. API (Optional) -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">6. API Endpoint</h2>
+      <ul class="list-disc list-inside">
+        <li><code>GET /api/products</code> – Ambil semua produk</li>
+        <li><code>POST /api/login</code> – Login pengguna</li>
+        <li><code>POST /api/orders</code> – Checkout produk</li>
+      </ul>
+    </section>
+
+    <!-- 7. Tim -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">7. Tim Pengembang</h2>
+      <ul class="list-disc list-inside">
+        <li><strong>Backend:</strong> Fulan Developer</li>
+        <li><strong>Frontend:</strong> Siti UI Designer</li>
+        <li><strong>QA:</strong> Ahmad Tester</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="bg-blue-600 text-white text-center py-4">
+    &copy; 2025 Tim Developer Toko Online
+  </footer>
+
+</body>
+</html>
